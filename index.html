@@ -1,7 +1,7 @@
 <!--
   ============================================================================
   WELLBEING NUTRITION — Pure Korean Marine Collagen Peptides
-  CRO-Optimized Product Detail Page (PDP) Rebuild — Pure Clinical Luxury Edition
+  CRO-Optimized Product Detail Page (PDP) Rebuild — Compact Luxury Edition
   ============================================================================
 -->
 <!DOCTYPE html>
@@ -115,11 +115,11 @@
 
     .section-title {
       font-family: var(--font-display);
-      font-size: 36px;
+      font-size: 34px;
       font-weight: 700;
       color: var(--color-black);
       text-align: center;
-      margin-bottom: var(--spacing-2xl);
+      margin-bottom: var(--spacing-xl);
       letter-spacing: -0.5px;
     }
 
@@ -475,24 +475,16 @@
     .trust-badge-item { background: #FFFFFF; border: 1px solid var(--color-gray-200); padding: 10px 4px; border-radius: var(--border-radius-sm); font-size: 11px; font-weight: 600; color: var(--color-gray-700); }
 
     /* ========================================================================
-       SECTION 5 — SOLID MATTE DARK TEAL PROGRESS RINGS (BENEFITS)
+       SECTION 5 — SOLID MATTE TEAL PROGRESS RINGS (BENEFITS)
        ======================================================================== */
-    .benefits-section {
-      padding: var(--spacing-4xl) 0;
-      background: var(--color-white);
-    }
-
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--spacing-xl);
-    }
+    .benefits-section { padding: var(--spacing-3xl) 0; background: var(--color-white); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg); }
 
     .radial-benefit-card {
       background: #FFFFFF;
       border: 1px solid var(--color-gray-200);
       border-radius: var(--border-radius);
-      padding: var(--spacing-xl);
+      padding: var(--spacing-lg);
       box-shadow: var(--shadow-clean);
       transition: all var(--transition-base);
       display: flex;
@@ -502,30 +494,14 @@
     }
 
     .radial-benefit-card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-4px);
       box-shadow: var(--shadow-clean-hover);
       border-color: var(--color-teal-dark);
     }
 
-    .radial-ring-wrapper {
-      position: relative;
-      width: 120px;
-      height: 120px;
-      margin-bottom: var(--spacing-md);
-    }
-
-    .radial-ring-svg {
-      width: 100%;
-      height: 100%;
-      transform: rotate(-90deg);
-    }
-
-    .radial-ring-bg {
-      fill: none;
-      stroke: var(--color-gray-200);
-      stroke-width: 8;
-    }
-
+    .radial-ring-wrapper { position: relative; width: 100px; height: 100px; margin-bottom: var(--spacing-sm); }
+    .radial-ring-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+    .radial-ring-bg { fill: none; stroke: var(--color-gray-200); stroke-width: 8; }
     .radial-ring-circle {
       fill: none;
       stroke: var(--color-teal-dark);
@@ -536,193 +512,122 @@
       transition: stroke-dashoffset 1.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .radial-center-content {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .radial-counter {
-      font-family: var(--font-body);
-      font-size: 26px;
-      font-weight: 700;
-      color: var(--color-black);
-      line-height: 1;
-      letter-spacing: -0.5px;
-    }
-
-    .radial-title {
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--color-black);
-      margin-bottom: 4px;
-    }
-    .radial-title sup a { color: var(--color-teal-dark); }
-
-    .radial-desc { font-size: 13px; color: var(--color-gray-600); }
+    .radial-center-content { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; }
+    .radial-counter { font-family: var(--font-body); font-size: 22px; font-weight: 700; color: var(--color-black); }
+    .radial-title { font-size: 16px; font-weight: 700; color: var(--color-black); margin-bottom: 2px; }
+    .radial-desc { font-size: 12px; color: var(--color-gray-600); }
 
     /* ========================================================================
-       SECTION 6 — PURE CLINICAL MOLECULAR COMPARISON
+       SECTION 6 — COMPACT DUAL-BAR BIOAVAILABILITY COMPARISON
        ======================================================================== */
-    .why-section { padding: var(--spacing-4xl) 0; background: var(--color-bg-clean); }
+    .why-section { padding: var(--spacing-3xl) 0; background: var(--color-bg-clean); }
 
-    .molecular-comparison-card {
+    .compact-bio-card {
+      max-width: 760px;
+      margin: 0 auto var(--spacing-2xl);
       background: #FFFFFF;
       border: 1px solid var(--color-gray-200);
       border-radius: var(--border-radius);
-      padding: var(--spacing-2xl);
-      box-shadow: var(--shadow-clean);
-      margin-bottom: var(--spacing-3xl);
-    }
-
-    .molecular-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--spacing-2xl);
-      align-items: center;
-    }
-
-    .molecular-column {
-      background: #FFFFFF;
-      border-radius: var(--border-radius-sm);
       padding: var(--spacing-xl);
-      border: 2px solid var(--color-gray-200);
-      box-shadow: var(--shadow-sm);
-      text-align: center;
-      position: relative;
+      box-shadow: var(--shadow-clean);
     }
 
-    .molecular-column.winner {
-      border-color: var(--color-teal-dark);
-      box-shadow: 0 4px 16px rgba(44, 107, 107, 0.08);
+    .bio-row { margin-bottom: var(--spacing-lg); }
+    .bio-row:last-child { margin-bottom: 0; }
+
+    .bio-row-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
     }
 
-    .mol-badge {
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--color-teal-dark);
-      color: white;
+    .bio-name { font-weight: 700; font-size: 15px; color: var(--color-black); display: flex; align-items: center; gap: 8px; }
+    .bio-size { font-size: 13px; color: var(--color-gray-500); font-weight: 600; }
+
+    .gold-advantage-badge {
+      background: var(--color-gold);
+      color: #FFFFFF;
       font-size: 11px;
       font-weight: 700;
-      padding: 3px 12px;
+      padding: 3px 10px;
       border-radius: var(--border-radius-pill);
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
-    .mol-visual {
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      margin: var(--spacing-md) 0;
-    }
+    .bio-track { height: 14px; background: var(--color-gray-100); border-radius: 7px; overflow: hidden; position: relative; }
+    .bio-fill { height: 100%; border-radius: 7px; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1); }
+    .bio-fill.marine { background: var(--color-teal-dark); width: 0%; }
+    .bio-fill.bovine { background: var(--color-gray-300); width: 0%; }
 
-    .mol-particle-tiny {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--color-teal-dark);
-      animation: floatParticle 3s infinite alternate ease-in-out;
-    }
-
-    .mol-particle-large {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: var(--color-gray-300);
-      opacity: 0.7;
-    }
-
-    @keyframes floatParticle {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-6px); }
-    }
-
-    .mol-stat {
-      font-size: 28px;
-      font-weight: 700;
-      font-family: var(--font-body);
-      color: var(--color-teal-dark);
-      letter-spacing: -0.5px;
-    }
-
-    /* ========================================================================
-       SECTION 7 — CENTRAL FORMULA BREAKDOWN
-       ======================================================================== */
-    .ingredients-section { padding: var(--spacing-4xl) 0; background: var(--color-white); }
-
-    .formula-breakdown-wrapper {
-      position: relative;
-      max-width: 1000px;
-      margin: 0 auto var(--spacing-3xl);
-      padding: var(--spacing-2xl) 0;
-    }
-
-    .formula-center-jar {
-      width: 220px;
-      height: 220px;
-      margin: 0 auto;
-      background: #FFFFFF;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-clean);
-      border: 2px solid var(--color-gray-200);
-      position: relative;
-    }
-
-    .formula-center-jar img { width: 140px; height: 140px; object-fit: contain; }
-
-    .formula-nodes-grid {
+    .why-bullets-row {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: var(--spacing-md);
-      margin-top: var(--spacing-2xl);
+      max-width: 760px;
+      margin: 0 auto;
     }
 
-    .formula-node-card {
+    .why-bullet-card {
       background: #FFFFFF;
       border: 1px solid var(--color-gray-200);
       border-radius: var(--border-radius-sm);
       padding: var(--spacing-md);
-      box-shadow: var(--shadow-sm);
       text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .why-bullet-card h4 { font-size: 14px; font-weight: 700; color: var(--color-black); margin-bottom: 2px; }
+    .why-bullet-card p { font-size: 12px; color: var(--color-gray-600); }
+
+    /* ========================================================================
+       SECTION 7 — STREAMLINED FORMULA BREAKDOWN
+       ======================================================================== */
+    .ingredients-section { padding: var(--spacing-3xl) 0; background: var(--color-white); }
+
+    .formula-bar-container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--spacing-md);
+    }
+
+    .formula-bar-item {
+      background: #FFFFFF;
+      border: 1px solid var(--color-gray-200);
+      border-radius: var(--border-radius-sm);
+      padding: var(--spacing-md) var(--spacing-xs);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
       transition: all var(--transition-base);
     }
 
-    .formula-node-card:hover {
+    .formula-bar-item:hover {
       transform: translateY(-4px);
-      box-shadow: var(--shadow-clean-hover);
       border-color: var(--color-teal-dark);
+      box-shadow: var(--shadow-clean-hover);
     }
 
     .dosage-pill {
       background: var(--color-gold);
       color: white;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
-      padding: 3px 10px;
+      padding: 2px 8px;
       border-radius: var(--border-radius-pill);
       display: inline-block;
       margin-bottom: 6px;
     }
 
     /* RESEARCH & STATS */
-    .research-section { padding: var(--spacing-4xl) 0; background: var(--color-bg-clean); }
-    .study-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl); }
+    .research-section { padding: var(--spacing-3xl) 0; background: var(--color-bg-clean); }
+    .study-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg); }
     .study-card {
       background: #FFFFFF;
       border: 1px solid var(--color-gray-200);
       border-radius: var(--border-radius-sm);
-      padding: var(--spacing-xl);
+      padding: var(--spacing-lg);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -740,23 +645,23 @@
       margin-bottom: var(--spacing-md);
     }
 
-    .stats-bar { background: var(--color-teal-dark); color: var(--color-white); padding: var(--spacing-2xl) 0; }
+    .stats-bar { background: var(--color-teal-dark); color: var(--color-white); padding: var(--spacing-xl) 0; }
     .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-xl); text-align: center; }
-    .stat-item h3 { font-family: var(--font-body); font-size: 44px; font-weight: 700; letter-spacing: -1px; }
+    .stat-item h3 { font-family: var(--font-body); font-size: 38px; font-weight: 700; letter-spacing: -1px; }
 
-    .similar-section { padding: var(--spacing-4xl) 0; background: var(--color-white); }
-    .similar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-lg); }
+    .similar-section { padding: var(--spacing-3xl) 0; background: var(--color-white); }
+    .similar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-md); }
     .similar-card { background: #FFFFFF; border: 1px solid var(--color-gray-200); border-radius: var(--border-radius-sm); overflow: hidden; transition: all var(--transition-base); }
     .similar-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-clean-hover); border-color: var(--color-teal-dark); }
-    .similar-card-img { background: var(--color-gray-50); padding: var(--spacing-lg); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; position: relative; }
+    .similar-card-img { background: var(--color-gray-50); padding: var(--spacing-md); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; position: relative; }
     .flavor-tag-badge { position: absolute; top: 10px; left: 10px; padding: 3px 10px; border-radius: var(--border-radius-pill); font-size: 10px; font-weight: 700; color: white; text-transform: uppercase; }
     .badge-berry { background: #E11D48; }
     .badge-tropical { background: #F59E0B; }
     .badge-mango { background: #EAB308; color: #333; }
     .badge-lemon { background: #84CC16; color: #333; }
 
-    .site-footer { background: var(--color-cta); color: var(--color-white); padding: var(--spacing-4xl) 0 var(--spacing-2xl); }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: var(--spacing-2xl); margin-bottom: var(--spacing-3xl); }
+    .site-footer { background: var(--color-cta); color: var(--color-white); padding: var(--spacing-3xl) 0 var(--spacing-xl); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: var(--spacing-2xl); margin-bottom: var(--spacing-2xl); }
   </style>
 </head>
 <body>
@@ -932,7 +837,7 @@
       </div>
     </section>
 
-    <!-- SECTION 5 — SOLID MATTE TEAL PROGRESS RINGS (BENEFITS) -->
+    <!-- SECTION 5 — CLINICALLY PROVEN RESULTS (RADIAL RINGS) -->
     <section class="benefits-section scroll-reveal">
       <div class="container">
         <p class="section-eyebrow">Backed by Data</p>
@@ -940,7 +845,6 @@
 
         <div class="benefits-grid">
 
-          <!-- Radial Ring 1: 35% Wrinkle Reduction -->
           <div class="radial-benefit-card">
             <div class="radial-ring-wrapper">
               <svg class="radial-ring-svg" viewBox="0 0 100 100">
@@ -955,7 +859,6 @@
             <p class="radial-desc">Visible reduction in fine line depth in 8 weeks.</p>
           </div>
 
-          <!-- Radial Ring 2: 28% Hydration -->
           <div class="radial-benefit-card">
             <div class="radial-ring-wrapper">
               <svg class="radial-ring-svg" viewBox="0 0 100 100">
@@ -970,7 +873,6 @@
             <p class="radial-desc">Restores deep dermal moisture retention.</p>
           </div>
 
-          <!-- Radial Ring 3: 88% Elasticity -->
           <div class="radial-benefit-card">
             <div class="radial-ring-wrapper">
               <svg class="radial-ring-svg" viewBox="0 0 100 100">
@@ -985,7 +887,6 @@
             <p class="radial-desc">Dermal matrix firmness & bounce-back index.</p>
           </div>
 
-          <!-- Radial Ring 4: 92% Hair/Nails -->
           <div class="radial-benefit-card">
             <div class="radial-ring-wrapper">
               <svg class="radial-ring-svg" viewBox="0 0 100 100">
@@ -1000,7 +901,6 @@
             <p class="radial-desc">Accelerates keratin amino synthesis.</p>
           </div>
 
-          <!-- Radial Ring 5: 96% Joint Mobility -->
           <div class="radial-benefit-card">
             <div class="radial-ring-wrapper">
               <svg class="radial-ring-svg" viewBox="0 0 100 100">
@@ -1015,7 +915,6 @@
             <p class="radial-desc">Cartilage matrix regeneration score.</p>
           </div>
 
-          <!-- Radial Ring 6: 85% Gut Integrity -->
           <div class="radial-benefit-card">
             <div class="radial-ring-wrapper">
               <svg class="radial-ring-svg" viewBox="0 0 100 100">
@@ -1034,77 +933,88 @@
       </div>
     </section>
 
-    <!-- SECTION 6 — MOLECULAR COMPARISON -->
+    <!-- SECTION 6 — COMPACT DUAL-BAR BIOAVAILABILITY COMPARISON -->
     <section class="why-section scroll-reveal">
       <div class="container">
         <p class="section-eyebrow">Molecular Advantage</p>
         <h2 class="section-title">Why Korean Marine Collagen?</h2>
 
-        <div class="molecular-comparison-card">
-          <div class="molecular-grid">
-            <div class="molecular-column winner">
-              <span class="mol-badge">1.5× Bio-Absorption (98%)</span>
-              <h3>Korean Marine Collagen</h3>
-              <p style="font-size:13px; color:#64748B;">Micro-Peptides particle structure</p>
-              <div class="mol-visual">
-                <div class="mol-particle-tiny"></div>
-                <div class="mol-particle-tiny" style="animation-delay:0.3s;"></div>
-                <div class="mol-particle-tiny" style="animation-delay:0.6s;"></div>
-                <div class="mol-particle-tiny" style="animation-delay:0.9s;"></div>
-              </div>
-              <div class="mol-stat">3,000 Daltons</div>
+        <div class="compact-bio-card">
+          <!-- Row 1: Marine Collagen -->
+          <div class="bio-row">
+            <div class="bio-row-header">
+              <span class="bio-name">
+                Korean Marine Collagen
+                <span class="gold-advantage-badge">1.5× Higher Absorption (98%)</span>
+              </span>
+              <span class="bio-size">3,000 Daltons</span>
             </div>
+            <div class="bio-track">
+              <div class="bio-fill marine" data-target-width="98%"></div>
+            </div>
+          </div>
 
-            <div class="molecular-column">
-              <h3>Standard Bovine Collagen</h3>
-              <p style="font-size:13px; color:#64748B;">Large protein triple-helix chain (65% absorbed)</p>
-              <div class="mol-visual">
-                <div class="mol-particle-large"></div>
-              </div>
-              <div class="mol-stat" style="color:#94A3B8;">10,000 Daltons</div>
+          <!-- Row 2: Bovine Collagen -->
+          <div class="bio-row">
+            <div class="bio-row-header">
+              <span class="bio-name" style="color:#64748B;">Standard Bovine Collagen</span>
+              <span class="bio-size">10,000 Daltons (65% absorbed)</span>
+            </div>
+            <div class="bio-track">
+              <div class="bio-fill bovine" data-target-width="65%"></div>
             </div>
           </div>
         </div>
+
+        <div class="why-bullets-row">
+          <div class="why-bullet-card">
+            <h4>Wild-Caught & Clean</h4>
+            <p>100% mercury-free tested Korean fish.</p>
+          </div>
+          <div class="why-bullet-card">
+            <h4>Sensitive Friendly</h4>
+            <p>Gluten-free, keto, zero smell or taste.</p>
+          </div>
+          <div class="why-bullet-card">
+            <h4>Type I & III Peptides</h4>
+            <p>Precise collagen for skin firmness & hydration.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- SECTION 7 — CENTRAL FORMULA BREAKDOWN -->
+    <!-- SECTION 7 — STREAMLINED FORMULA BREAKDOWN -->
     <section class="ingredients-section scroll-reveal">
       <div class="container">
         <p class="section-eyebrow">Formula Anatomy</p>
-        <h2 class="section-title">Central Formula Breakdown</h2>
+        <h2 class="section-title">Active Ingredients</h2>
 
-        <div class="formula-breakdown-wrapper">
-          <div class="formula-center-jar">
-            <img src="images/collagen-product.png" alt="Pure Korean Marine Collagen Jar">
+        <div class="formula-bar-container">
+          <div class="formula-bar-item">
+            <span class="dosage-pill">8,000 mg</span>
+            <h4 style="font-size:13px; font-weight:700;">Hydrolyzed Collagen</h4>
+            <p style="font-size:11px; color:#64748B;">Type I & III Peptides</p>
           </div>
-
-          <div class="formula-nodes-grid">
-            <div class="formula-node-card">
-              <span class="dosage-pill">8,000 mg</span>
-              <h4 style="font-size:14px; font-weight:700;">Hydrolyzed Collagen</h4>
-              <p style="font-size:12px; color:#64748B;">Type I & III Peptides</p>
-            </div>
-            <div class="formula-node-card">
-              <span class="dosage-pill">50 mg</span>
-              <h4 style="font-size:14px; font-weight:700;">Hyaluronic Acid</h4>
-              <p style="font-size:12px; color:#64748B;">Dermal Moisture Lock</p>
-            </div>
-            <div class="formula-node-card">
-              <span class="dosage-pill">40 mg</span>
-              <h4 style="font-size:14px; font-weight:700;">Vitamin C</h4>
-              <p style="font-size:12px; color:#64748B;">Collagen Synthesis Co-factor</p>
-            </div>
-            <div class="formula-node-card">
-              <span class="dosage-pill">30 mcg</span>
-              <h4 style="font-size:14px; font-weight:700;">Biotin</h4>
-              <p style="font-size:12px; color:#64748B;">Keratin Infrastructure</p>
-            </div>
-            <div class="formula-node-card">
-              <span class="dosage-pill">Patented</span>
-              <h4 style="font-size:14px; font-weight:700;">Extramel® SOD B</h4>
-              <p style="font-size:12px; color:#64748B;">French Melon Antioxidant</p>
-            </div>
+          <div class="formula-bar-item">
+            <span class="dosage-pill">50 mg</span>
+            <h4 style="font-size:13px; font-weight:700;">Hyaluronic Acid</h4>
+            <p style="font-size:11px; color:#64748B;">Dermal Moisture Lock</p>
+          </div>
+          <div class="formula-bar-item">
+            <span class="dosage-pill">40 mg</span>
+            <h4 style="font-size:13px; font-weight:700;">Vitamin C</h4>
+            <p style="font-size:11px; color:#64748B;">Synthesis Co-factor</p>
+          </div>
+          <div class="formula-bar-item">
+            <span class="dosage-pill">30 mcg</span>
+            <h4 style="font-size:13px; font-weight:700;">Biotin</h4>
+            <p style="font-size:11px; color:#64748B;">Keratin Infrastructure</p>
+          </div>
+          <div class="formula-bar-item">
+            <span class="dosage-pill">Patented</span>
+            <h4 style="font-size:13px; font-weight:700;">Extramel® SOD B</h4>
+            <p style="font-size:11px; color:#64748B;">Melon Antioxidant Shield</p>
           </div>
         </div>
       </div>
@@ -1304,11 +1214,19 @@
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
+
+            // Fill radial progress rings
             const rings = entry.target.querySelectorAll('.radial-ring-circle');
             rings.forEach(ring => {
               const percent = parseInt(ring.dataset.percent);
               const offset = 283 - (283 * percent / 100);
               ring.style.strokeDashoffset = offset;
+            });
+
+            // Fill bioavailability progress bars
+            const bioFills = entry.target.querySelectorAll('.bio-fill');
+            bioFills.forEach(fill => {
+              fill.style.width = fill.dataset.targetWidth;
             });
           }
         });
